@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 
@@ -21,7 +22,7 @@ export default function HomePage() {
 						<code className={styles.code}>pages/index.js</code>
 					</p>
 					<div>
-						<a
+						<Link
 							href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -35,7 +36,7 @@ export default function HomePage() {
 								height={24}
 								priority
 							/>
-						</a>
+						</Link>
 					</div>
 				</div>
 
@@ -60,7 +61,7 @@ export default function HomePage() {
 				</div>
 
 				<h1 className={styles.title}>
-					Go to <a href="/about">About</a>
+					Go to <Link href="/about">About</Link>
 				</h1>
 			</main>
 		</>

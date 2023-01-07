@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 
@@ -36,7 +37,9 @@ export default function AboutPage() {
 				</div>
 
 				<h1 className={styles.title}>
-					Go to back to <a href="/">Home</a>
+					{/* this makes a prefetch of the linked page/module (unlike regular anchor element) */}
+					{/* so that it won't reload the page when navigating between pages (only apply to local routes) */}
+					Go to back to <Link href="/">Home</Link>
 				</h1>
 			</main>
 		</>
