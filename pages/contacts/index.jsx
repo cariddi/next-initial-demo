@@ -2,17 +2,17 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
-import { Navbar } from "../components/Navbar";
+import { Navbar } from "../../components/Navbar";
+import styles from "../../styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function AboutPage() {
+export default function ContactsPage() {
 	return (
 		<>
 			<Head>
-				<title>About - Lucas</title>
-				<meta name="description" content="About Page" />
+				<title>Contacts - Lucas</title>
+				<meta name="description" content="Contacts Page" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
@@ -41,8 +41,6 @@ export default function AboutPage() {
 				</div>
 
 				<h1 className={styles.title}>
-					{/* this makes a prefetch of the linked page/module (unlike regular anchor element) */}
-					{/* so that it won't reload the page when navigating between pages (only apply to local routes) */}
 					Go to back to <Link href="/">Home</Link>
 				</h1>
 			</main>
