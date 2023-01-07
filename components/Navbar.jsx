@@ -1,9 +1,12 @@
+import Link from "next/link";
+import styles from "./Navbar.module.css";
+
 export const Navbar = () => {
 	return (
-		<nav>
-			<a href="/">Home</a>
-			<a href="/about">About</a>
-			<a href="/contacts">Contacts</a>
+		<nav className={styles.menu}>
+			<Link href="/">Home</Link>
+			<Link href="/about">About</Link>
+			<Link href="/contacts">Contacts</Link>
 		</nav>
 	);
 };
