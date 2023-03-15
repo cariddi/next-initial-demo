@@ -19,7 +19,7 @@ export default function ContactsPage() {
 	);
 }
 
-ContactsPage.getLayout = (page) => {
+ContactsPage.getLayout = (page: JSX.Element) => {
 	return (
 		<MainLayout>
 			<DarkLayout>{page}</DarkLayout>

@@ -1,6 +1,8 @@
 import React, { FC } from "react";
 
-export const DarkLayout: FC = ({ children }: React.PropsWithChildren) => {
+interface LayoutProps extends React.PropsWithChildren {}
+
+export const DarkLayout: FC<LayoutProps> = ({ children }) => {
 	return (
 		<div
 			style={{
