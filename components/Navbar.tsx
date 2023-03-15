@@ -1,7 +1,12 @@
 import { ActiveLink } from "./ActiveLink";
 import styles from "./Navbar.module.css";
 
-const menuItems = [
+interface MenuItem {
+	text: string;
+	href: string;
+}
+
+const menuItems: MenuItem[] = [
 	{
 		text: "Home",
 		href: "/",
